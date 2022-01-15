@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/prodect.css">
+    <link rel="stylesheet" href="css/recu.css">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@1,300&display=swap" rel="stylesheet">
+</head>
+
+<body id="body">
+    <header id="header-content">
+
+        <div class="logo">
+            <img src="images/parte-logo/logo1.jpg" alt="tomato" class="img-logo">
+            <h2 class="name-logo">seeds company</h2>
+        </div>
+
+
+        <div class="resp-nav">
+            <input type="checkbox" id="check">
+            <label for="check">
+                    <i class="fas fa-bars" id="btn" onclick="display()"></i>
+                    <i class="fas fa-times" id="cancel" onclick="display1()"></i>
+                </label>
+            <nav id="menu-bar">
+                <div class="icon-header"><a href="#" class="rappore"><i class="fas fa-file-alt"></i>rappore</a></div>
+                <div class="icon-header"><a href="#" class="Comande"><i class="fas fa-pager"></i>Comande</a></div>
+                <div class="icon-header"><a href="#" class="livraison"><i class="fas fa-handshake"></i>livraison</a></div>
+                <div class="icon-header"><a href="#" class="notification"><i class="far fa-bell"></i><span>1</span></a></div>
+            </nav>
+        </div>
+    </header>
+    <div class="step-pro" id="step-pro">
+        <div id="progress"></div>
+        <div class="step-row">step 1</div>
+        <div class="step-row">step 2</div>
+        <div class="step-row">step 3</div>
+    </div>
+
+    <section id="container">
+        <form method="POST" id="contactForm" name="contactForm" class="contactForm">
+            <h2 class="form-title">Add lient</h2>
+            <div class="form-group-name">
+                <div class="name">
+                    <label for="name"><i class="fas fa-user-alt"></i> First Name</label>
+                    <input type="text" class="form-input" name="name" id="name" placeholder="First Name" required>
+                </div>
+                <div class="name">
+                    <label for="name"><i class="fas fa-user"></i> Last Name</label>
+                    <input type="text" class="form-input" name="name" id="name" placeholder="Last Name" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="tel"><i class="fas fa-phone-alt"></i> telephone</label>
+                <input type="tel" class="form-input" name="tel" id="tel" placeholder="telephone" required>
+            </div>
+            <div class="form-group">
+                <label for="name"><i class="fas fa-id-card"></i> Cin</label>
+                <input type="text" class="form-input" name="cin" id="cin" placeholder="Cin" required>
+            </div>
+            <div class="form-group">
+                <label for="name"><i class="fas fa-street-view"></i> Location</label>
+                <input type="text" class="form-input" name="location" id="Location" placeholder="Location" required>
+                <div class="local" onclick="local()">location</div>
+            </div>
+            <div class="next-button-1">
+                <button type="button" onclick="next1()">Next</button>
+            </div>
+        </form>
+
+        <div id="map">
+        </div>
+
+    </section>
+    <section id="container-1">
+        <main class="article-contant" id="cont">
+            <div class="setting-product">
+                <div class="input-1-product">
+                    <div id="search" onclick="search()"><i class="fas fa-search"></i></div>
+                    <div id="hidding" onclick="hidding()"><i class="far fa-eye-slash"></i></div>
+                    <input type="text" id="surface" placeholder="search">
+                    <div id="delete" onclick="delet()"><i class="fas fa-trash-alt"></i></div>
+
+                </div>
+                <div class="input-1-product">
+
+                    <select name="sol" id="sol">
+                        <option value="">sableux</option>
+                        <option value="">limoneux</option>
+                        <option value="">argileux</option>
+                        <option value="">humifere</option>
+                    </select>
+                </div>
+                <div class="input-radio">
+                    <label for="turbo">turbo</label>
+                    <input type="radio" name="turbo" id="turbo">
+                    <label for="turbo">surface</label>
+                    <input type="radio" name="turbo" id="surface">
+                </div>
+
+                <!-- <div class="choix-type">
+                    <p id="ble">blé</p>
+                    <p id="fruit">fruit</p>
+                    <p id="legume">Légume</p>
+
+                </div> -->
+
+                <div id="product-title">product</div>
+            </div>
+            <div class="spr">
+            </div>
+            <div class="product-article">
+
+                <article class="prodact">
+                    <div class="prix-prodact">128dh</div>
+                    <div class="info-prodact">
+                        <div class="img-product">
+                            <img src="images/parte-logo/logo1.jpg" alt="" class="img-prodact">
+                            <div class="center">
+                                <label for="acheter" id="label">acheter</label>
+                                <input type="checkbox" name="acheter" id="checke" onclick="appearance()">
+                            </div>
+                        </div>
+                        <ul class="info-contant">
+                            <li>med : med er</li>
+                            <li>med : med er</li>
+                            <li>med : med er</li>
+                            <li>med : med er</li>
+                            <li>med : med er</li>
+                            <li>med : med er</li>
+                            <li>med : med er</li>
+
+                        </ul>
+                    </div>
+                    <div class="description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum quae nihil corporis, perferendis placeat dicta corrupti eos magni odit, aliquam delectus fuga labore facilis, commodi unde aspernatur temporibus sequi ab.
+                    </div>
+                    <div class="prodact-input">
+                        <input type="text" placeholder="surface">
+                        <button>ADD</button>
+                    </div>
+                </article>
+                <article class="prodact">
+                    <div class="prix-prodact">128dh</div>
+                    <div class="info-prodact">
+                        <div class="img-product">
+                            <img src="images/parte-logo/logo1.jpg" alt="" class="img-prodact">
+                            <div class="center1">
+                                <label for="acheter" id="label1">acheter</label>
+                                <input type="checkbox" name="acheter" id="checke1" onclick="appearance()">
+                            </div>
+                        </div>
+                        <ul class="info-contant">
+                            <li>med : med er</li>
+                            <li>med : med er</li>
+                            <li>med : med er</li>
+                            <li>med : med er</li>
+                            <li>med : med er</li>
+                            <li>med : med er</li>
+                            <li>med : med er</li>
+
+                        </ul>
+                    </div>
+                    <div class="description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum quae nihil corporis, perferendis placeat dicta corrupti eos magni odit, aliquam delectus fuga labore facilis, commodi unde aspernatur temporibus sequi ab.
+                    </div>
+                    <div class="prodact-input">
+                        <input type="text" placeholder="surface">
+                        <button>ADD</button>
+                    </div>
+                </article>
+                <article class="prodact">
+                    <div class="prix-prodact">128dh</div>
+                    <div class="info-prodact">
+                        <div class="img-product">
+                            <img src="images/parte-logo/logo1.jpg" alt="" class="img-prodact">
+                            <div class="center2">
+                                <label for="acheter" id="label2">acheter</label>
+                                <input type="checkbox" name="acheter" id="checke2" onclick="appearance()">
+                            </div>
+                        </div>
+                        <ul class="info-contant">
+                            <li>med : med er</li>
+                            <li>med : med er</li>
+                            <li>med : med er</li>
+                            <li>med : med er</li>
+                            <li>med : med er</li>
+                            <li>med : med er</li>
+                            <li>med : med er</li>
+
+                        </ul>
+                    </div>
+                    <div class="description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum quae nihil corporis, perferendis placeat dicta corrupti eos magni odit, aliquam delectus fuga labore facilis, commodi unde aspernatur temporibus sequi ab.
+                    </div>
+                    <div class="prodact-input">
+                        <input type="text" placeholder="surface">
+                        <button>ADD</button>
+                    </div>
+                </article>
+                <article class="prodact">
+                    <div class="prix-prodact">128dh</div>
+                    <div class="info-prodact">
+                        <div class="img-product">
+                            <img src="images/parte-logo/logo1.jpg" alt="" class="img-prodact">
+                            <div class="center3">
+                                <label for="acheter" id="label3">acheter</label>
+                                <input type="checkbox" name="acheter" id="checke3" onclick="appearance()">
+                            </div>
+                        </div>
+                        <ul class="info-contant">
+                            <li>med : med er</li>
+                            <li>med : med er</li>
+                            <li>med : med er</li>
+                            <li>med : med er</li>
+                            <li>med : med er</li>
+                            <li>med : med er</li>
+                            <li>med : med er</li>
+
+                        </ul>
+                    </div>
+                    <div class="description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum quae nihil corporis, perferendis placeat dicta corrupti eos magni odit, aliquam delectus fuga labore facilis, commodi unde aspernatur temporibus sequi ab.
+                    </div>
+                    <div class="prodact-input">
+                        <input type="text" placeholder="surface">
+                        <button>ADD</button>
+                    </div>
+                </article>
+
+            </div>
+        </main>
+
+        <div class="next-button">
+            <button type="button" onclick="next2()">next</button>
+            <button type="button" onclick="back1()">back</button>
+        </div>
+    </section>
+    <section id="container-2">
+
+        <div class="color"></div>
+        <div class="title-recu">
+            <div class="resu-logo">
+                <img src="images/parte-logo/logo1.jpg" alt="">
+                <h2>seeds </h2>
+            </div>
+            <div class="info-comp-recu">
+                <div class="info-comp">
+                    <p class="head-recu">seeds company</p>
+                    <div class="info-place">
+                        <div class="recu-info">
+                            <p class="addresse">16 , estresrdydghjhg gghjujyff</p>
+                            <p class="num-com">136</p>
+                            <p class="city">city</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="info-sent">
+            <div class="recu-info-omp">
+                <h3 class="h3">info client</h3>
+                <p class="addresse">name</p>
+                <p class="num-com">cin</p>
+                <p class="city">city</p>
+            </div>
+            <div class="recu-date">
+                <h3 class="h3">date 1</h3>
+                <p class="contant-date">12/08/2021</p>
+                <h3 class="h3">date 2</h3>
+                <p class="contant-date">24/09/2021</p>
+
+            </div>
+        </div>
+        <table>
+            <tr>
+                <th>name product</th>
+                <th>type prodact</th>
+                <th>type sol</th>
+                <th>description</th>
+                <th>test/acheter</th>
+                <th>prix</th>
+            </tr>
+            <tr>
+                <td>product 1</td>
+                <td>type 1</td>
+                <td>sole 1</td>
+                <td>jfutgtyu</td>
+                <td>acheter</td>
+                <td>128 dh</td>
+            </tr>
+            <tr>
+                <td>product 2</td>
+                <td>type 2</td>
+                <td>sol 2</td>
+                <td>jfutgtyu</td>
+                <td>acheter</td>
+                <td>128 dh</td>
+            </tr>
+            <tr>
+                <td>product 3</td>
+                <td>type 3</td>
+                <td>sol 3</td>
+                <td>jfutgtyu</td>
+                <td>test</td>
+                <td>0 dh</td>
+            </tr>
+            <tr>
+                <td style="padding: 0px;"><input type="text" id="" value="product 4" style=" border: none; background: initial;  width: 100%; height: 100%;"></td>
+                <td>type 4</td>
+                <td>sol 4</td>
+                <td>jfutgtyu</td>
+                <td>acheter</td>
+                <td>128 dh</td>
+            </tr>
+        </table>
+
+        <div class="info-prix-total">
+            <div class="recu-description">
+                <p class="note">note</p>
+                <p class="contant-note">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </div>
+            <div class="recu-description-1">
+                <p class="title-prix">prix total</p>
+                <p class="total">384.00dh</p>
+            </div>
+        </div>
+
+
+
+        <div class="next-button">
+            <button type="button" id="next2">submit</button>
+            <button type="button" onclick="back2()">back</button>
+
+        </div>
+    </section>
+    <div class="icon-tools">
+        <div class="icon-1">
+            <a><i class="fas fa-calendar-check"></i></a>
+        </div>
+        <div class="icon-1" onclick="shopaf()">
+            <a><i class="fas fa-shopping-bag"></i></a>
+        </div>
+    </div>
+
+    <div id="shop">
+        <div class="head-shop">
+            <p id="shop-title">product</p>
+            <i class="fas fa-times" onclick="shophd()"></i>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBp3HLikPO1D7COyhhPRNfhz1UIMN69cmY&callback=initMap&libraries=&v=weekly" async></script>
+    <script src="js/maps.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+.color {
+    width: 100%;
+    height: 36px;
+    background: #04AA6D;
+    margin-bottom: 16px;
+}
+
+img {
+    width: 120px;
+}
+
+.title-recu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 60px;
+    border-bottom: 1px solid black;
+}
+
+.resu-logo>h2 {
+    padding: 0px 30px;
+}
+
+.info-comp,
+.recu-info {
+    direction: rtl;
+}
+
+.recu-date>h3 {
+    text-align: center;
+}
+
+.addresse {
+    direction: ltr;
+}
+
+.info-sent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 60px;
+    padding: 0px 16px;
+    border-bottom: 1px solid black;
+}
+
+table {
+    margin: 20px auto;
+    border-bottom: 1px solid black;
+    width: 80%;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table td,
+table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+}
+
+.info-prix-total {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px 60px;
+    border-top: 1px solid black;
+}
+
+.recu-description {
+    width: 50%;
+    padding: 8px 36px;
+}
+
+.recu-description-1 {
+    padding: 4px 36px;
+}
+
+@media print {
+    .next-button {
+        display: none;
+    }
+    .icon-tools {
+        display: none;
+    }
+    #header-content {
+        display: none;
+    }
+    #step-pro {
+        display: none;
+    }
+    #container-2 {
+        position: absolute;
+        top: 0;
+        height: 80vh;
+        padding-right: 70px;
+    }
+}
